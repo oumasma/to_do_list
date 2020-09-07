@@ -1,0 +1,6 @@
+<tr>
+    <tr>
+        <th scope="row"><%=  @newmail.id %></th>
+        <td><%= link_to(@deletemail.object, email_path(@newmail.id), method: :get, remote: true) %></td>
+    </tr>
+</tr>

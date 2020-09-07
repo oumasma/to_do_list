@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="container object">
+        <h2><%= @emailselected.object %></h2>
+    </div>
+
+    <div class="container content">
+    <p><%= @emailselected.body %></p>
+    </div>
+
+<%= link_to 'Supprimer', email_path(@emailselected.id), method: "delete", class: 'btn btn-danger', remote: true %>
+<%= link_to 'Marquer comme non lu', email_path(@emailselected.id), method: "put", class: 'btn btn-primary', remote: true %>
+</div>
+

@@ -1,0 +1,6 @@
+show_mail = document.getElementById("mail_selected");
+show_mail.removeChild(show_mail.firstChild);
+
+show_mail.insertAdjacentHTML("afterbegin", "<%= j render 'show', email: @emailselected %>");
+
+document.getElementById(<%= @emailselected.id.to_s %>);

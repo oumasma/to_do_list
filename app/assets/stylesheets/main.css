@@ -1,0 +1,7 @@
+.box, .bg-info {
+    padding: 10px;
+  }
+  
+  .bg-info {
+    display: none;
+  }

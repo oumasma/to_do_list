@@ -1,0 +1,5 @@
+<tr id= <%= @newmail.id.to_s %> class="<%= "font-weight-bold" if !@newmail.read %>">
+    <th scope="row"><%=  @newmail.id %></th>
+    <td><%= link_to(@newmail.object, email_path(@newmail.id), method: :get, remote: true) %></td>
+</tr>
+
